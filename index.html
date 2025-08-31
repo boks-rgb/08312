@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>보석동굴 그림책 탐험대</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body class="bg-[#E0F7F1] min-h-screen p-6 text-sm">
+
+  <!-- 메인 앱 -->
+  <div id="app">
+    <!-- 복복이 캐릭터 -->
+    <div class="text-center mb-4">
+      <img src="ea043687-1e87-42a6-a050-6e22ebc8bd2c.png" alt="복복이" class="mx-auto w-32" />
+      <div id="bokMessage" class="mt-2 text-[#007F6D] font-semibold">안녕! 나는 복복이야 💎</div>
+    </div>
+
+    <!-- 메뉴 버튼 -->
+    <div class="flex flex-wrap justify-center gap-2 mb-4">
+      <button id="toggleMenu" class="bg-sky-900 text-white rounded px-4 py-2">메뉴 숨기기 📘</button>
+      <button data-page="1" class="menu-btn bg-sky-900 text-white rounded px-4 py-2">1. 어떤 보석들이 있을까요?</button>
+      <button data-page="2" class="menu-btn bg-white border px-4 py-2 rounded">2. 나의 강점 보석</button>
+      <button data-page="3" class="menu-btn bg-white border px-4 py-2 rounded">3. 나의 필요 보석</button>
+      <button data-page="4" class="menu-btn bg-white border px-4 py-2 rounded">4. 활동 다짐</button>
+    </div>
+
+    <!-- 컨텐츠 영역 -->
+    <div id="content" cla
